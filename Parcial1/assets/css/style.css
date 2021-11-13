@@ -1,0 +1,235 @@
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    border-bottom: 1px solid black;
+}
+
+.menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    background: yellow;
+    max-width: 20%;
+    width: 70%;
+    margin-left: -70%;
+    font-family: Slabo;
+}
+#btn-menu {
+    display: none;
+}
+
+#btn-menu:checked~.menu {
+    margin: 0;
+}
+
+header label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2020;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    width: 100%;
+    background: yellow;
+    border-bottom: 1px solid black;
+}
+
+.contenido{
+  position: fixed;
+  right: 0;
+  left: 0;
+
+}
+
+.contenido2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Ofertas{
+    display: grid;
+    place-items: center;
+    width: 1200px ;
+    grid-gap: 30px;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:     500px  ;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 1px 5px 15px -4px #000000;
+    box-shadow: 1px 5px 15px -4px #000000;
+    padding: 1rem;
+    border-bottom-left-radius: 35px;
+  }
+
+.imagen-principal {
+    background-image: url("http://www.siliconweek.com/wp-content/uploads/2014/09/mercadolibre.png");
+    background-size: 100%;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card{
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+
+
+.container .card:hover{
+  transform: translateX(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+  width: 330px;
+  height: 220px;
+}
+
+.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+#btn_view:hover {
+    background: rgb(107, 107, 107);
+    box-shadow: 0px 3px 3px 0px gray;
+    color: white;
+    transition: 0.5s;
+}
