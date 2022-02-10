@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+  <meta charset="utf-8">
+  <title>Mercado Libre</title>
+
+</head>
+
+<body>
+
+ <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="https://img.apksum.com/eb/com.mercadolibre/10.132.2/icon.png" alt="" width="30px"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Categorias</a></li>
+                <li><a href="#Ofertas">Ofertas</a></li>
+                <li><a href="">Historial</a></li>
+                <li><a href="#Supermercado">Supermercado</a></li>
+                <li><a href="">Moda</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda/PQR</a></li>
+            </ul>
+
+        </nav>
+ </header>
+
+  <div class="imagen-principal"></div>  <!--en esta division agregamos una imagen con efecto paralax  -->
+      <div class="contenido">
+          <div class="col-1">
+              <img class="imagen" src="http://www.siliconweek.com/wp-content/uploads/2014/09/mercadolibre.png=" alt="">
+          </div>
+      </div>
+
+<h2 id="Ofertas">Ofertas</h2>
+
+<div class="container">
+
+     {% for prodcuto in list %}
+  <div class="card">
+    <img src="{{ prodcuto.imagen }}">
+    <h4>{{ prodcuto.name }}</h4>
+    <p>{{ prodcuto.precio }}</p>
+    <a href="#">Agregar Al Carrito</a>
+  </div>
+    {% endfor %}
+
+
+
+<img src="https://dplusonline.es/wp-content/uploads/como-registrarse-en-Disney-Plus.jpg">
+
+
+<img src="https://i.ytimg.com/vi/Do0j2FCItoM/maxresdefault.jpg">
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>
